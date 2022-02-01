@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [CrossBrowsertest]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test_Runner_Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.comcast.testng.CreateOrgTestNgTest">
+        <methods>
+          <include name="CreateOrgwithIndustryandTypetest"/>
+          <include name="configAC"/>
+          <include name="Createorgtest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.crm.comcast.testng.CreateOrgTestNgTest -->
+    </classes>
+  </test> <!-- Test_Runner_Firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="Test_Runner_Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.comcast.testng.CreateOrgTestNgTest">
+        <methods>
+          <include name="CreateOrgwithIndustryandTypetest"/>
+          <include name="configAC"/>
+          <include name="Createorgtest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.crm.comcast.testng.CreateOrgTestNgTest -->
+    </classes>
+  </test> <!-- Test_Runner_Chrome(failed) -->
+</suite> <!-- Failed suite [CrossBrowsertest] -->
