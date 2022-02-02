@@ -39,11 +39,19 @@ public class CreateOrganizationsPage extends WebDriverUtility
 	public void createOrgwithIndandType(String Orgname, int i, int j)
 	{
 		OrgName.sendKeys(Orgname);
-		SaveBtn.click();
 		dropDown(IndusTry, i);
 		dropDown(Type, j);
+		SaveBtn.click();
 	}
 
+	public void createOrgWithIndustrytext(String Orgname, String Industrytext)
+	{
+		OrgName.sendKeys(Orgname);
+		dropDown(Industrytext,IndusTry);
+		SaveBtn.click();
+		
+		
+	}
 
 	public WebDriver getDriver() 
 	{

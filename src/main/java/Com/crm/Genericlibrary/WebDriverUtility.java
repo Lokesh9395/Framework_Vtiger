@@ -40,7 +40,7 @@ public class WebDriverUtility
 	 */
 	public void waitUntilPageLoad(WebDriver driver)
 	{
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		   
 	 }
 	
@@ -51,7 +51,7 @@ public class WebDriverUtility
 	 */
 	   public void waitForElementToBeClickable(WebDriver driver,WebElement element)
 	   {
-		  WebDriverWait wait = new WebDriverWait(driver, 20);
+		  WebDriverWait wait = new WebDriverWait(driver, 40);
 		  wait.until(ExpectedConditions.elementToBeClickable(element));
 	   }
 

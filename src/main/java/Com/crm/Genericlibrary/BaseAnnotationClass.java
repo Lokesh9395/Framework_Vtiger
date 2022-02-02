@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+//import org.testng.annotations.Parameters;
 
 import Com.crm.Objectrepositorylibrary.HomePage;
 import Com.crm.Objectrepositorylibrary.LoginPage;
@@ -85,6 +85,7 @@ public class BaseAnnotationClass
 		//logout
 		HomePage hp=new HomePage(driver);
 		hp.logout(driver);
+		driver.close();
 		
 		
 	}

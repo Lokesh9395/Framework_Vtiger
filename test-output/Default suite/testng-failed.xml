@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.comcast.testng.AddToCarttest">
+      <class name="com.crm.comcast.testng.createOrgWithIndustrytest">
         <methods>
-          <include name="products"/>
+          <include name="configAC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+          <include name="orgIndustrytest"/>
         </methods>
-      </class> <!-- com.crm.comcast.testng.AddToCarttest -->
+      </class> <!-- com.crm.comcast.testng.createOrgWithIndustrytest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
